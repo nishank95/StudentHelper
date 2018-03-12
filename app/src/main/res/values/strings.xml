@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Student</string>
+    <string name="show_list_name">Search Results</string>
+    <string name="display_page_name">PG Details</string>
+
+
+    <!--Nav baR -->
+    <string name="nav_bar_1">Homepage</string>
+    <string name="nav_bar_2">About Us</string>
+    <string name="nav_bar_3">Contact Us</string>
+    <string name="nav_bar_4">Show PG</string>
+    <!--Nav baR -->
+
+    <string-array name="city_drp">
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+    </string-array>
+
+    <string-array name="locality_ban">
+        <item>HSR Layout</item>
+        <item>Tin Factory</item>
+    </string-array>
+
+
+    <string-array name="locality_hyd">
+        <item>SR Nagar</item>
+        <item>Ameerpet</item>
+    </string-array>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="contact_page">Contact Us</string>
+    <string name="home_page">Homepage</string>
+    <string name="about_page">About Us</string>
+</resources>

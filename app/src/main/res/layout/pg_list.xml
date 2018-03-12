@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:layout_margin="5dp"
+    android:filterTouchesWhenObscured="false"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/pg_name"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif"
+            android:gravity="fill_vertical"
+            android:paddingLeft="10dp"
+            android:text="Hostel Name"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/det1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pg_name"
+            android:layout_toEndOf="@+id/addr_icon"
+            android:padding="7dp"
+            android:text="Address Goes Here"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addr_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/det2"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/pg_name"
+            android:padding="5dp"
+            android:src="@drawable/map" />
+
+        <TextView
+            android:id="@+id/det2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/det1"
+            android:layout_toEndOf="@+id/addr_icon"
+            android:padding="7dp"
+            android:text="Available sharing"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/det3"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/addr_icon"
+            android:padding="5dp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/det3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/det2"
+            android:padding="7dp"
+            android:text="PG Amount"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/Widget.Design.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/det3"
+            android:clickable="true"
+            android:defaultFocusHighlightEnabled="false"
+            android:focusedByDefault="false"
+            android:textAlignment="textEnd"
+            android:textDirection="rtl"
+            android:touchscreenBlocksFocus="false"
+            android:visibility="visible"
+            card_view:tabIndicatorColor="@color/colorPrimary"
+            card_view:tabTextAppearance="@style/TextAppearance.AppCompat">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:contextClickable="true"
+                android:defaultFocusHighlightEnabled="true"
+                android:text="Call" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="View Map" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:elevation="0dp"
+                android:text="Add as Favourite" />
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/det1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/pg_name"
+            android:cropToPadding="false"
+            android:padding="4dp"
+            android:src="@drawable/boy" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
